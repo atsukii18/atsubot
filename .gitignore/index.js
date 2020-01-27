@@ -3,7 +3,7 @@ const fs = require("fs");
 const config = require("./Storage/config.json")
 const bot = new Discord.Client();
 
-bot.login(config.token)
+bot.login(process.env.TOKEN);
 
 bot.commands = new Discord.Collection();
  
